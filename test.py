@@ -17,5 +17,10 @@ class Testcalc(unittest.TestCase):
              activities.add(-1, 1), 0,
              msg="asserted func run test"
          )
+     def test_subtarct(self):
+          self.assertEqual(activities.subtract(1,1),0)
+
+     def test_sub(self):
+         self.assertEqual(activities.subtract(-1, 1), -2)
 if __name__ == '__main__':
      unittest.main()
